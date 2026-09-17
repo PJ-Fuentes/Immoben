@@ -1,5 +1,10 @@
 # Immoben
 
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38bdf8?style=flat-square&logo=tailwind-css)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+
 Portail de suivi des pannes locatives (MVP) - A rental breakdown tracking portal for managing and tracking maintenance issues.
 
 ## Features
@@ -119,10 +124,33 @@ Click on any issue card to view full details including:
 - Calendar for scheduling repairs
 - Invoice tracking
 
+## Documentation
+
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Deployment Guide](DEPLOYMENT.md)
+- [Security Policy](SECURITY.md)
+- [Changelog](CHANGELOG.md)
+
+## CI/CD
+
+This project includes GitHub Actions workflows for:
+- Continuous Integration (lint and build)
+- Docker image building and publishing
+
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) first.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- Icons by [Lucide](https://lucide.dev/)
+
+## Support
+
+If you like this project, please consider giving it a ⭐ on GitHub!
