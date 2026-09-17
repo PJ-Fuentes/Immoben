@@ -2,6 +2,7 @@
 
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import StatusBadge from '@/components/StatusBadge';
 import PriorityBadge from '@/components/PriorityBadge';
 import CategoryIcon from '@/components/CategoryIcon';
@@ -40,7 +41,7 @@ export default function IssuePage({ params }: { params: { id: string } }) {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen bg-gray-50">
       <Header />
       
       <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -172,6 +173,8 @@ export default function IssuePage({ params }: { params: { id: string } }) {
           </form>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

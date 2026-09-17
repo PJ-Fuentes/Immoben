@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import CategoryIcon from '@/components/CategoryIcon';
 import { IssueCategory, IssuePriority } from '@/types';
 import { ArrowLeft } from 'lucide-react';
@@ -42,7 +43,7 @@ export default function NewIssuePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen bg-gray-50">
       <Header />
       
       <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -173,6 +174,8 @@ export default function NewIssuePage() {
           </form>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

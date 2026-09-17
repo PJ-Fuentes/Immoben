@@ -2,7 +2,9 @@
 
 import { useState } from 'react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import IssueCard from '@/components/IssueCard';
+import Stats from '@/components/Stats';
 import { mockIssues } from '@/lib/mockData';
 import { IssueStatus } from '@/types';
 import { Filter } from 'lucide-react';
@@ -15,10 +17,10 @@ export default function Home() {
     : mockIssues.filter(issue => issue.status === statusFilter);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen bg-gray-50">
       <Header />
       
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
             Suivi des pannes
@@ -27,6 +29,8 @@ export default function Home() {
             Gérez et suivez toutes vos demandes de maintenance
           </p>
         </div>
+
+        <Stats issues={mockIssues} />
 
         <div className="mb-6 flex items-center space-x-4">
           <div className="flex items-center space-x-2">
@@ -89,6 +93,8 @@ export default function Home() {
           </div>
         )}
       </main>
+
+      <Footer />
     </div>
   );
 }
