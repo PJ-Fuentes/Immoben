@@ -20,7 +20,7 @@ export default function ArtisanForm({
     <form action={action} className="space-y-6">
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-          Nom de l'entreprise <span className="text-red-500">*</span>
+          Nom de l&apos;entreprise <span className="text-red-500">*</span>
         </label>
         <input
           type="text"

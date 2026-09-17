@@ -59,10 +59,10 @@ export default async function EditArtisanPage({
         className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 mb-6"
       >
         <ArrowLeft className="w-4 h-4 mr-2" />
-        Retour à l'artisan
+        Retour à l&apos;artisan
       </Link>
 
-      <h1 className="text-3xl font-bold text-gray-900 mb-8">Modifier l'artisan</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-8">Modifier l&apos;artisan</h1>
       <div className="bg-white rounded-lg shadow p-6">
         <ArtisanForm 
           action={updateArtisan}

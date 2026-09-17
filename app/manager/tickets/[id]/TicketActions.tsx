@@ -40,8 +40,9 @@ Gestion Locative`
     }
 
     const artisan = artisans.find((a) => a.id === selectedArtisanId)
+    const artisanName = artisan?.name || "l'artisan"
     
-    return `Bonjour ${artisan?.name || 'l\'artisan'},
+    return `Bonjour ${artisanName},
 
 Nous avons une intervention à planifier pour le bien suivant :
 
@@ -173,7 +174,7 @@ Ben Gestion Locative`
             className="w-full flex items-center justify-center space-x-2 bg-indigo-600 text-white px-4 py-3 rounded-lg font-medium hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
           >
             <Copy className="w-5 h-5" />
-            <span>Marquer comme envoyé à l'artisan</span>
+            <span>Marquer comme envoyé à l&apos;artisan</span>
           </button>
         )}
 

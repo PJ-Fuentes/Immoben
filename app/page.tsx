@@ -60,8 +60,8 @@ export default function Home() {
               <ol className="text-sm text-gray-600 space-y-2">
                 <li>1. Le gestionnaire crée un lien unique par logement</li>
                 <li>2. Le locataire reçoit le lien et déclare sa panne (avec photos)</li>
-                <li>3. Le gestionnaire valide et envoie à l'artisan</li>
-                <li>4. Suivi du statut jusqu'à résolution</li>
+                <li>3. Le gestionnaire valide et envoie à l&apos;artisan</li>
+                <li>4. Suivi du statut jusqu&apos;à résolution</li>
               </ol>
             </div>
           </div>
