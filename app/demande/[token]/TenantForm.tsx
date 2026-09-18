@@ -130,6 +130,7 @@ export default function TenantForm({ property, tenant, agencyId }: TenantFormPro
       </div>
 
       {/* Type of problem */}
+      {/* Note: No explanatory text about internal routing (EAN/artisan) - tenants should not see process details */}
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-2">
           Type de problème <span className="text-red-500">*</span>
